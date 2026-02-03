@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./src/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence Reel</title>
+    <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.min.js"
+            }
+        }
+</script>
+</head>
+<body>
+
+    <!-- Symbol 3D -->
+    <div class="scene-container"></div>
+    <svg class="symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 900 900" style="display: none;">
+      <path fill-rule="evenodd" fill="#ffffff" d="M352.7,83.1L271.7.5l-16.4,16.1,80.9,82.6,16.4-16.1h.1ZM302.9,77.5L205.8,14.8l-12.1,18.7,97.2,62.7,12.1-18.7h-.1ZM400.1,99.7L339.5,1.2l-20.1,12.4,60.6,98.5,20.1-12.4ZM209.7,97.9l-114.5-16.3-2.9,20.7,114.5,16.3,2.9-20.7h0ZM170.6,142.3l-1.4-20.1-115.3,8.1,1.4,20.1,115.3-8.1ZM80.9,288.6L13,382.2l14,10.2,67.9-93.7-14-10.2h0ZM254.8,82.6l-108.4-40.1-7.5,20.2,108.4,40.1,7.5-20.2h0ZM441.4,125.7l-37.8-109.4-23,8,37.8,109.4,23-8ZM475.7,159.4l-13.7-114.9-24.9,3,13.7,114.9,24.9-3ZM515.7,334.6l78-85.4-5.5-5.1-78,85.4,5.5,5.1ZM526.5,292.8l57.9-100.2-23.5-13.6-57.9,100.2,23.5,13.6ZM498.5,374.9l4.7,6.7,94.8-66.1-4.7-6.7-94.8,66.1ZM512.7,84.2l-25.7-2.4-10.7,115.2,25.7,2.4,10.7-115.2ZM519.3,244.4l34.9-110.3-25.2-8-34.9,110.3,25.2,8ZM326.7,518.3l103.4,51.6,5.2-10.5-103.4-51.6-5.2,10.5h0ZM278.6,518.7l89.6,73.1,7.8-9.6-89.6-73.1-7.8,9.6ZM186.4,488l49.6,104.5,12.5-5.9-49.6-104.5-12.5,5.9h0ZM230.1,508.4l71.3,91.1,10.3-8.1-71.3-91.1-10.3,8.1h0ZM100.8,252.8l-11.9-13.6L2,315.5l11.9,13.6,86.9-76.3h0ZM477.7,415.4l3.4,8.3,107-43.9-3.4-8.3-106.9,43.9h0ZM414.4,487.6l115.5,4.1.4-10.3-115.5-4.1-.4,10.3h0ZM449.4,449.7l1.7,9.5,113.8-20.2-1.7-9.5-113.8,20.2h0ZM372.5,507.6l112.1,28.3,2.7-10.7-112.1-28.3-2.7,10.7h0ZM5.8,249l9,16.5,101.5-55.3-9-16.5L5.8,249ZM74.4,495.8l15.6,3.1,22.3-113.6-15.6-3.1s-22.3,113.6-22.3,113.6ZM83.7,336.8l-45.9,106.2,15.3,6.6,45.9-106.2-15.3-6.6h0ZM149,459.3l26.2,112.7,14.2-3.3-26.2-112.7-14.2,3.3ZM118.8,423.6l2,115.7,15.2-.3-2-115.7-15.2.3h0ZM23.6,186.6l5.4,18.7,111-32.2-5.4-18.7s-111,32.2-111,32.2Z"/>
+    </svg>
+    <!-- Background Image -->
+    <div class="background"></div>
+    <!-- Page content -->    
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a class="brand-identity" href="#" title="Intelligence Reel">
+                    <img src="./src/images/ir-logo.svg" alt="Intelligence Reel" title="Intelligence Reel">
+                </a>
+            </div>            
+        </header>
+        <!-- Hero -->
+        <section class="section hero">
+            <div class="container">
+                <div class="content">
+                    <h1>
+                        <span class="scramble-1"></span> <span class="scramble-2"></span><br>
+                        <span class="scramble-3"></span> <span class="scramble-4"></span><br>
+                        <span class="scramble-5"></span> <i><span class="scramble-6"></span></i>
+                    </h1>
+                </div>
+                <div class="arrow"></div>
+            </div>            
+        </section>
+        <!-- Waitlist -->
+        <section class="section cta">
+            <div class="container">
+               <div class="content waitlist">
+                    <h2>Join the waitlist</h2>
+                    <p>Be one of the first to experience Intelligence Reel&rsquo;s cutting-edge data analysis tools.</p>
+                    <form action="/submit" method="post">
+                        <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                        <button id="submit" type="submit">Join Now</button>
+                    </form>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy;<script>document.write(new Date().getFullYear());</script> Intelligence Reel. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" title="Terms of Service">Terms of Service</a>
+                        <a href="#" title="Privacy Policy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script type="module" src="./src/script/main.js"></script>
+</body>
+</html>

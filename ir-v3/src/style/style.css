@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url(normalize.css);
+@import url(reset.css);
+
+:root {
+    --font-serif: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+    --font-sans-serif: "Instrument Sans", Helvetica, Arial, sans-serif;
+    --color-primary: #0F5098;
+    --color-text: #fff;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.5;
+}
+a {
+    transition: opacity 0.5s ease-out;
+}
+.wrapper {
+    position: relative;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.scene-container,
+.background {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.scene-container {
+    z-index: 10;
+    /* opacity: 0.1; */
+}
+.background {
+    z-index: 1;
+    background: url(../images/background-image.png) center center / 120% 120% no-repeat ;
+    animation: shrink 6s infinite alternate;
+}
+@keyframes shrink {
+    0% { background-size: 140% 140%; }
+    100% { background-size: 120% 120% }
+}
+.header {
+    position: fixed;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.hero .container,
+.cta .container {
+    display: grid;
+    grid-template-rows: auto 3rem;
+    height: 100vh;
+}
+.container > * {
+    align-self: center;
+}
+.arrow {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    background: url(../images/arrow_down.svg) center center no-repeat;
+    background-size: contain;
+}
+.brand-identity img {
+    width: 12rem;
+    height: auto;
+}
+h1, h2 {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.0;
+    color: var(--color-text);
+}
+h1 {
+    display: block;
+    font-size: clamp(3.25rem, 12vw, 6rem);
+}
+h2 {
+    font-size: clamp(1rem, 3.5rem, 4rem);
+}
+.tagline_1, .tagline_2, .tagline_3, .tagline_4 {
+    font-family: var(--font-sans-serif);
+}
+.tagline_3 {
+    font-style: italic;
+}
+.waitlist p {
+    margin-bottom: 2rem;
+    font-family: var(--font-sans-serif);
+    font-size: clamp(1.125rem, 1.25rem, 2rem);
+    color: var(--color-text)
+}
+form {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+}
+#email, #submit {
+    padding: 1rem;
+    font-family: var(--font-sans-serif);
+    font-size: 1.25rem;
+    border-radius: 4px;
+}
+#submit {
+    display: inline-block;
+    background: #fff;
+    border: none;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-copyright > * {
+    margin: 8px;
+}
+.footer-copyright {
+    font-family: var(--font-sans-serif);
+    font-size: 1rem;
+    color: var(--color-text)
+}
+.footer-copyright ul {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-copyright ul li {
+    display: inline-block;
+}
+.footer-links a:last-child {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+    .brand-identity img {
+        width: 18rem;
+    }
+    form {
+        display: flex;
+    }
+    #email {
+        width: 400px;
+    }
+    #submit {
+        padding: 0 1rem;
+    }
+    .footer-copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+}
