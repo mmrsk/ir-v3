@@ -47,7 +47,7 @@ a {
 }
 .background {
     z-index: 1;
-    background: #0270e0 URL(../../images/background-image.png) center center / 120% 120% no-repeat;
+    background: #0270e0 URL(../images/background-image.png) center center / 120% 120% no-repeat;
     animation: shrink 6s infinite alternate;
 }
 @keyframes shrink {
